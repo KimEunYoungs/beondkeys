@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* 시스템폰트 불러오기 */
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/NanumBarunGothic.otf);
+  src: url(../font/NanumBarunGothic.woff);
+  src: url(../font/NanumBarunGothic.woff2);
+ }
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/NanumBarunGothicBold.otf);
+  src: url(../font/NanumBarunGothicBold.woff);
+  src: url(../font/NanumBarunGothicBold.woff2);  
+ }
+ 
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../font/NanumBarunGothicLight.otf);
+  src: url(../font/NanumBarunGothicLight.woff);
+  src: url(../font/NanumBarunGothicLight.woff2);}
+
+
+
+
+*{margin:0; padding:0; box-sizing: border-box;}
+
+/* 
+box-sizing: border-box
+패딩과 보더는 사이즈에 영향을 미치지 않음
+*/
+
+body{
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 16px;
+  line-height:1.3;
+  color:#333333;
+}
+a{
+  color:#333333;
+  text-decoration: none;
+} 
+img{
+  border:none; vertical-align:top; 
+}
+ul, ol, li{list-style: none;}
+
+/* 플롯처리 될 엄마요소에게 clear라는 클래스를 추가 */
+.clear::after{
+  content:''; display: block; clear:both;
+}
+.blind{
+  font-size:0; color:transparent; text-indent: -9999px;  
+}
