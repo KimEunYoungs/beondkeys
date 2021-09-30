@@ -220,21 +220,18 @@ header .mobile_menu ul li a{
 .b2b06{
   margin-bottom:115px;
 }
-.b2b06 > p{
+.b2b06 p{
   margin-left:45px;
   margin-top:-10px;
-  /*
-  질문하기
-  이 부분 모바일은 br들어가고
-  태블릿은 한줄로 되어있음
-  어떻게 처리하면 되는가??
-  */
 }
 .b2b06 a{
   display: block;
   width:70%;
   margin:0 auto;
   margin-top:44px;
+}
+.more_b2b_pc_trans{
+  display: none;
 }
 
 
@@ -253,7 +250,9 @@ header .mobile_menu ul li a{
 }
 .customer07 .nqbtn li:nth-child(1){
   margin-right:10%;
-
+}
+.customer07 .tell_line .tell_line03{
+  display: none;
 }
 
 
@@ -427,6 +426,11 @@ header .gnb ul li{
   /* background-color: papayawhip; */
   margin-right:7px;
 }
+header .gnb ul li a{
+  display: block;
+  width:100px;
+  height:100px;
+}
 header .gnb ul li:nth-child(8){
   margin-right:0px;
 }
@@ -570,19 +574,16 @@ header .mobile_menu{display: none;}
   .nstore03 a.gogo_tbl img{
     width:100%;
   }
-  /* 질문하기???
-  a를 100% 해서 
-  이너사이즈 너비의 몇 %로 들어있는거 무효화 시켰는데 왜 안먹히는지..? */
 
 
   .lookbook04{
-    border:1px solid red;
+    /* border:1px solid red; */
     margin-top:167px;
     margin-bottom: 155px;
   }
 
   .lookbook04 h3{
-    margin-bottom:50px;
+    margin-bottom: 50px;
     padding-left:15%;
   }
 
@@ -591,7 +592,8 @@ header .mobile_menu{display: none;}
   .lookbook04 div.clear{
     width:100%;
     margin-left:0%;
-    border:1px solid blue;
+    /* border:1px solid blue; */
+    margin-top:50px;
   }
   .lookbook04 div.clear a{
     display: block;
@@ -654,29 +656,41 @@ header .mobile_menu{display: none;}
 
   
   .b2b06{
+    /* border:1px solid red; */
     margin-top:210px;
     margin-bottom:203px;
   }
+  .b2b06 > h3{
+    padding-left:10%;
+  }
   .b2b06 > p{
     margin-left:0px;
+    margin-left:10%;
     margin-top:30px;
     margin-bottom:120px;
   }
   .b2b06 a{
     /* display: block; */
-    width:100%;
+    width:80%;
     /* margin:0 auto; */
     margin-top:120px;
+  }
+  .b2b06 a img{
+    display: none;
+  }
+  .b2b06 a img.t_b2b_img{
+    display: block;
   }
   
   .customer07{
     margin-bottom: 200px;
   }
   .customer07 h3{
-    margin-bottom: 50px;
+    padding-bottom:50px;
+    padding-left:10%;
   }
   .customer07 .tell_line{
-    width:100%;
+    width:80%;
     /* background-color: aqua; */
     margin: 0 auto;
   }
@@ -684,10 +698,6 @@ header .mobile_menu{display: none;}
     float: left;
   }
 
-  /*
-  질문하기
-  이 부분 %로 만들어두면 되는지 ???
-  */
   .customer07 .tell_line > li:nth-child(1){
     width:65%;
     margin-right:5%;
@@ -737,7 +747,7 @@ header .mobile_menu{display: none;}
   footer h2.bottomlogo a{
     display: block;
     position: absolute;
-    bottom:74px; left:50%;
+    bottom:60px; left:50%;
     transform: translateX(-50%);
     width:127px; height:96px;
     background: url(../img/logo_trans_btm.png) no-repeat top/100%;
@@ -748,6 +758,9 @@ header .mobile_menu{display: none;}
     /* margin-top:20px;
     text-align: center;
     line-height: 1.5; */
+    /* background-color: red; */
+    font-size:20px;
+    padding-bottom:70px;
   }
   
   .topbtn{
@@ -768,11 +781,11 @@ header .mobile_menu{display: none;}
 
 }
 
-/* pc 1920px 이상------------------- */
+/* pc 1920px 이상--1800px부터 진행----------- */
 @media screen and (min-width:1920px){
   header{
     /* position: relative; */
-    background-color: violet;
+    /* background-color: violet; */
     height:555px;
     margin-bottom:65px;
   }
@@ -780,7 +793,7 @@ header .mobile_menu{display: none;}
   header .inner{
     margin:0 auto;
     max-width:1200px;
-    background-color: mediumslateblue;
+    /* background-color: mediumslateblue; */
     width:100%;
     height:100%;
     position: relative;
@@ -946,7 +959,7 @@ header .gnb ul li:nth-child(1):hover a{
 }
 .container > div{
   float: left;
-  border:3px dotted dodgerblue;
+  /* border:3px dotted dodgerblue; */
 }
 .slidebox{
   width:100%;
@@ -969,7 +982,7 @@ header .gnb ul li:nth-child(1):hover a{
   width:90%;
   margin:0;
   margin-left:10%;
-  border:1px solid red;
+  /* border:1px solid red; */
   background-position-y: 0px;
   
 }
@@ -994,15 +1007,15 @@ header .gnb ul li:nth-child(1):hover a{
 .product02{
   margin:0;
   width:100%;
-  border:1px solid blue;
-  background-color: yellow;
+  /* border:1px solid blue; */
+  /* background-color: yellow; */
 }
 .product02 .inner{
   margin:0;
   width:90%;
   max-height:850px;
   margin-left:10%;
-  border:1px solid red;
+  /* border:1px solid red; */
 }
 .product02 h3{
   margin-bottom:10px;
@@ -1024,11 +1037,11 @@ header .gnb ul li:nth-child(1):hover a{
   margin:0;
   margin-top:150px;
   position: relative;
-  background-color: teal;
+  /* background-color: teal; */
 }
 .container .nstore03 div.inner{
   width:90%;
-  background-color: red;
+  /* background-color: red; */
   margin-left:10%;
 }
 .nstore03 .inner h3{
@@ -1062,30 +1075,35 @@ header .gnb ul li:nth-child(1):hover a{
 
 
 .lookbook04{
-background-color: yellowgreen;
+/* background-color: yellowgreen; */
 width:100%;
 margin-left:0;
 }
 
 .lookbook04 h3{
   margin-bottom:-30px;
+  /* border:1px solid red; */
+  padding-left:5%;
 }
 
 .lookbook04 p{
   display: block;
   font-size:16px;
   margin-top:40px;
+  margin-bottom:20px;
+  margin-left:5%
 }
 
 .lookbook04 div.clear{
   margin:0;
-  width:69%;
+  width:100%;
+  /* border:5px solid red; */
 }
 .lookbook04 div.clear a{
   display: block;
   float: none;
-  border:5px solid yellow;
-  width:145%;
+  /* border:5px solid yellow; */
+  width:100%;
   }
 .lookbook04 .fairy{
   margin:0;
@@ -1109,8 +1127,9 @@ margin-left:0;
 
   .container .sns05{
     margin:0px;
-    width:100%;
-    background-color: red;
+    margin-left:5%;
+    width:90%;
+    /* background-color: red; */
   }
   .container .sns05 .inner{
     width:100%;
@@ -1159,23 +1178,34 @@ margin-left:0;
   }
   .b2b06 > h3{
     margin-bottom:10px;
+    padding-left:5%;
   
   }
   .b2b06 > p{
     margin-left:0px;
+    padding-left:5%;
     margin-top:30px;
     margin-bottom:30px;
   }
+
   .b2b06 a{
     /* display: block; */
-    width:100%; 
+    width:90%; 
     /* margin:0 auto; */
     margin-top:0px;
+    /* background-color: red; */
   }
   .b2b06 a img{
-    width:calc( ( 100% - 18px ) / 3);
+    display: block;
+    width:calc( ( 100% - 88px ) / 3);
     float: left;
     border:1px solid gray;
+  }
+  .b2b06 a img.more_b2b_pc_trans{
+    display: block;
+    width:60px;
+    margin-left:10px;
+    margin-top:225px;
   }
   .b2b06 a img:nth-child(1){
     display: none;
@@ -1188,13 +1218,15 @@ margin-left:0;
   .customer07{
     width:100%;
     margin-bottom: 125px;
+    padding:0 5%;
   }
   .customer07 h3{
-    margin-bottom: 20px;
+  padding-left:0;
+  margin-bottom: 20px;
   }
   .customer07 .tell_line{
     width:100%;
-    /* background-color: aqua; */
+    /* border:1px dotted red; */
     margin: 0 auto;
   }
   .customer07 .tell_line > li{
@@ -1205,33 +1237,102 @@ margin-left:0;
     width:calc((100% - 20px) / 3) ;
     margin-right:0;
   }
-
-  /*여기서부터 진행하기 9.02*/
-  .customer07 .tell_line > li:nth-child(2){
-    width:60%;
-  }
-  .customer07 .nqbtn li{
-    float: left;
-    width:100%;
-    margin-top:0px;
-  }
-  .customer07 .nqbtn li:nth-child(1){
+  .customer07 .tell_line > li:nth-child(3){
+    width:calc((100% - 20px) / 3 * 2) ;
+    margin-left:20px;
+    /* background-color: pink; */
     margin-right:0;
-    margin-bottom:7%;
   }
 
+  .customer07 .tell_line .tell_line02{
+    display: none;
+  }
+  .customer07 .tell_line .tell_line03{
+    display: block;
+  }
+  /* .customer07 .tell_line .tell_line03 ul{
+    background-color: aquamarine;
+  } */
+.tell_line03 ul.pcnq li a{
+  display: block;
+  width:calc(50% - 10px);
+  height:290px;
+  float: left;
+  padding: 0 20px  20px  20px;
+  /* background-color: yellow; */
+}
+.tell_line03 ul.pcnq li a.pcnq02{
+
+  float: right;
+}
+
+.pcnq > li ul li{
+  margin-top:20px;
+
+  padding:10px 0;
+  position: relative;
+}
+.pcnq > li ul li span{
+
+  position: absolute;
+  right:10px;
+}
+.pcnq > li ul li:nth-child(1){
+  border-bottom:5px solid #000;
+  font-size:18px;
+}
 
 
-footer{display: none;}
+ /*푸터*/
+footer{
+  display:block;
+  width:100%; height:400px;
+  background-color: #000;
+  padding-top:35px;
+  color:#9e9e9e;
+  position: relative;
+}
+.footlink{
+  width:80%;
+  font-size:18px;
+  margin:0;
+  margin-left:10%;
+  margin-top:70px;
+  margin-bottom:70px;
+  /* border:1px solid red; */
+}
+.footlink li{
+  float: left;
+  width:200px;
+  margin:0;
+  /* background-color: green; */
+  text-align: center;
+}
+.footlink li:nth-child(1){
+ margin-left:133px;
+}
 
+footer h2{
+  display: block;
+}
+footer h2.bottomlogo a{
+  display: block;
+  position: absolute;
+  top:203px; left:283px;
+  width:127px; height:96px;
+  background: url(../img/logo_trans_btm.png) no-repeat top/100%;
+  color:transparent; font-size:0;
 
-
-
-
-
-
-
-
+}
+footer p{
+  margin-top:0px;
+  text-align: left;
+  line-height: 1.5;
+  margin-left:calc(10% + 200px);
+  font-size:14px;
+  /* background-color: red; */
+  padding-bottom:70px;
+}
 
 
 

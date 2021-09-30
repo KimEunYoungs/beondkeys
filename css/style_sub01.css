@@ -11,7 +11,9 @@
   min-width:380px;
 }
 img{width:100%;}
-/* 헤더 */
+
+
+/*===== 헤더 */
 header{
   position: relative;
   /* background-color: yellow; */
@@ -67,16 +69,30 @@ header .mobile_menu ul li a{
   margin-right:20px;
   float:right;
 }
+.lnb{display: none;}
 
 
 
-/*컨텐츠*/
+/*=====컨텐츠*/
+.container{
+  font-size:13px;
+}
+.con1 img{display: none;}
+.con1 img.visual01_m{display: block;}
+
+.con2{
+  padding: 120px 0 120px 0;
+}
+.con2 p{
+  width:84%;
+  margin:0 auto;
+  /* background-color: red; */
+}
 
 
 
 
-
-/*푸터*/
+/*=====푸터*/
 footer{
   display:block;
   width:100%; height:200px;
@@ -87,7 +103,7 @@ footer{
 }
 .footlink{
   width:90%;
-  font-size:11px;
+  font-size:12px;
   margin:0 auto;
 }
 .footlink li{
@@ -103,6 +119,7 @@ footer p{
   margin-top:20px;
   text-align: center;
   line-height: 1.5;
+  font-size:12px;
 }
 
 .topbtn{
@@ -119,7 +136,8 @@ footer p{
 
 /* 타블렛 1200px 이상 ------------------------*/
 @media screen  and (min-width:1200px){
-  /*헤더*/
+
+  /*=====헤더*/
   header{
     /* position: relative; */
     /* background-color: tomato; */
@@ -244,6 +262,11 @@ header .gnb ul li{
   /* background-color: papayawhip; */
   margin-right:7px;
 }
+header .gnb ul li a{
+  display: block;
+  width:100px;
+  height:100px;
+}
 header .gnb ul li:nth-child(8){
   margin-right:0px;
 }
@@ -257,12 +280,12 @@ header .gnb ul li.on a{
 header .mobile_menu{display: none;}
   
 
-/*컨텐츠*/
+/*=====컨텐츠*/
   
   
   
   
-  /*푸터*/
+  /*=====푸터*/
   footer{
     display:block;
     width:100%; height:540px;
@@ -292,7 +315,7 @@ header .mobile_menu{display: none;}
   footer h2.bottomlogo a{
     display: block;
     position: absolute;
-    bottom:74px; left:50%;
+    bottom:60px; left:50%;
     transform: translateX(-50%);
     width:127px; height:96px;
     background: url(../img/logo_trans_btm.png) no-repeat top/100%;
@@ -303,6 +326,9 @@ header .mobile_menu{display: none;}
     /* margin-top:20px;
     text-align: center;
     line-height: 1.5; */
+    /* background-color: red; */
+    font-size:20px;
+    padding-bottom:70px;
   }
   
   .topbtn{
@@ -323,25 +349,23 @@ header .mobile_menu{display: none;}
 
 }
 
-/* pc 1920px 이상---------------------------- */
+/* pc 1920px 이상------------- */
 @media screen and (min-width:1920px){
+  /*=====헤더 */
   header{
     /* position: relative; */
-    background-color: violet;
+    /* background-color: violet; */
     height:555px;
     margin-bottom:65px;
   }
-
   header .inner{
     margin:0 auto;
     max-width:1200px;
-    background-color: mediumslateblue;
+    /* background-color: mediumslateblue; */
     width:100%;
     height:100%;
     position: relative;
   }
-
-
   header::after{
     /* content:''; */
     /* display:block; */
@@ -350,7 +374,6 @@ header .mobile_menu{display: none;}
     max-width:740px;
     padding-top:0px;
     transform: translateX(40px);
-    
   }
   h1 a{
     /* display: block; */
@@ -444,11 +467,6 @@ header .mobile_menu{display: none;}
     color:#969696;
     font-weight: bold; */
   }
-
-
-
-
-
 header .gnb{
   display: block;
   /* background-color: olive; */
@@ -461,7 +479,6 @@ header .gnb{
   bottom:20px; left:50%;
   transform: translateX(-50%);
 }
-
 header .gnb ul li{
   float: left;
   width:100px;
@@ -477,9 +494,10 @@ header .gnb ul li.on{
   border-radius:none;
 }
 header .gnb ul li.on a{
-  color:inherit;
+  color:#fff;
+  background-color: #000;
+  border-radius: 50%;
 }
-
 header .gnb ul li:hover{
   background-color: #000;
   border-radius: 50%;
@@ -495,21 +513,100 @@ header .gnb ul li:nth-child(1):hover a{
   color:inherit;
 }
 
+.lnb{
+  display: block;
+  width:100%;
+  height:50px;
+  background-color: #eeeeee;
+  transform: translateY(-25px);
+}
+.lnb ul{
+  width:800px;
+  /* background-color: chartreuse; */
+  margin:0 auto;
+  transform: translateX(70px);
+}
+.lnb ul li{
+  float: left;
+  padding:8px 0;
+  margin-right: 40px;
+}
+.lnb ul li a{
+display: block;
+ width:100%;
+ height:35px;
+ line-height: 35px;
+ padding:0 10px;
+
+}
+.lnb ul li a.on{
+  background-color: #fff;
+  border-bottom:4px solid #8d8d8d;
+}
+.lnb ul li a:hover{
+  background-color: #fff;
+  border-bottom:4px solid #8d8d8d;
+}
+
+
+
+
+
+
 /* 컨텐츠 */
 
 
 
+ /*푸터*/
+footer{
+  display:block;
+  width:100%; height:400px;
+  background-color: #000;
+  padding-top:35px;
+  color:#9e9e9e;
+  position: relative;
+}
+.footlink{
+  width:80%;
+  font-size:18px;
+  margin:0;
+  margin-left:10%;
+  margin-top:70px;
+  margin-bottom:70px;
+  /* border:1px solid red; */
+}
+.footlink li{
+  float: left;
+  width:200px;
+  margin:0;
+  /* background-color: green; */
+  text-align: center;
+}
+.footlink li:nth-child(1){
+ margin-left:133px;
+}
 
-footer{display: none;}
+footer h2{
+  display: block;
+}
+footer h2.bottomlogo a{
+  display: block;
+  position: absolute;
+  top:203px; left:283px;
+  width:127px; height:96px;
+  background: url(../img/logo_trans_btm.png) no-repeat top/100%;
+  color:transparent; font-size:0;
 
-
-
-
-
-
-
-
-
+}
+footer p{
+  margin-top:0px;
+  text-align: left;
+  line-height: 1.5;
+  margin-left:calc(10% + 200px);
+  font-size:14px;
+  /* background-color: red; */
+  padding-bottom:70px;
+}
 
 
 
