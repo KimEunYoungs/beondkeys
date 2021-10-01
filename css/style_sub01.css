@@ -77,6 +77,8 @@ header .mobile_menu ul li a{
 .container{
   font-size:13px;
 }
+
+/* ===section #AboutBeOnD */
 .con1 img{display: none;}
 .con1 img.visual01_m{display: block;}
 
@@ -84,10 +86,32 @@ header .mobile_menu ul li a{
   padding: 120px 0 120px 0;
 }
 .con2 p{
-  width:84%;
+  width:80%;
   margin:0 auto;
+  margin-left:15%;
   /* background-color: red; */
 }
+
+.con3 .visual02_tbl{display: none;}
+
+.con4{
+  padding: 120px 0 120px 0;
+}
+.con4 p{
+  width:80%;
+  margin:0 auto;
+  margin-left:10%;
+}
+.con4 p:nth-child(1){
+  margin-bottom:80px;
+}
+.con5{
+  margin-bottom:120px;
+}
+
+section#OnlineStore{display: none;}
+section#OfflineStore{display: none;}
+
 
 
 
@@ -281,6 +305,50 @@ header .mobile_menu{display: none;}
   
 
 /*=====컨텐츠*/
+.container{
+  font-size:16px;
+}
+
+/* ===section #AboutBeOnD */
+.con1 img.visual01_m{display: none;}
+.con1 img.visual01_tbl{display: block;}
+
+.con2{
+  padding: 80px 0 80px 0;
+}
+.con2 p{
+  width:80%;
+  margin:0 auto;
+  margin-left:15%;
+  /* background-color: red; */
+}
+.con2 br.brnone{display:none;}
+
+.con3 .visual02_m{display: none;}
+.con3 .visual02_tbl{display: block;}
+
+.con4{
+  padding: 80px 0 80px 0;
+}
+.con4 p{
+  margin-left:0;
+  float: left;
+  width:calc(40% - 30px);
+  /* background-color: bisque; */
+}
+.con4 p:nth-child(1){
+  margin-bottom:0px;
+  margin-left:10%;
+  margin-right:60px;
+}
+
+.con5{
+  margin-bottom:120px;
+}
+
+
+
+
   
   
   
@@ -554,6 +622,49 @@ display: block;
 
 
 /* 컨텐츠 */
+.container{
+  font-size:16px;
+}
+
+/* ===section #AboutBeOnD */
+.con1 img.visual01_m{display: none;}
+.con1 img.visual01_tbl{display: none;}
+.con1 img.visual01_pc{display: block;}
+
+.con2{
+  padding: 80px 0 80px 0;
+  font-size:20px;
+}
+.con2 p{
+  width:80%;
+  margin:0 auto;
+  margin-left:20%;
+  /* background-color: red; */
+}
+.con2 br.brnone{display:none;}
+
+/* .con3 .visual02_m{display: none;}
+.con3 .visual02_tbl{display: block;} */
+
+.con4{
+  padding: 80px 0 80px 0;
+}
+.con4 p{
+  margin-left:0;
+  float: left;
+  width:calc(30% - 30px);
+  /* background-color: bisque; */
+}
+.con4 p:nth-child(1){
+  margin-bottom:0px;
+  margin-left:20%;
+  margin-right:60px;
+}
+
+.con5{
+  margin-bottom:120px;
+}
+
 
 
 
